@@ -45,7 +45,7 @@ shinyUI(
              wellPanel(p("The Bonferroni correction is very extreme. It divides the unadjusted p-values by the total number of tests. The Bonferroni correction controls the family-wise error rate (FWER) under the worst-case scenario: when all the tests are independent of one another."),
                        p("The Holm correction also controls the FWER, but is slightly less extreme. It proceeds as follows: Order your m p-values from smallest to largest. Find the smallest p-value that satisfies this condition: p_k > alpha/(m + 1 - k), where k is the p-value’s index. This and all larger p-values are insignificant; all smaller p-values are significant."),
                        p("The Benjamini–Hochberg procedure controls the FDR. Like the Holm correction, you also begin by ordering m p-values. Then you find the largest p-value that satisfies: p_k <= (k/m)*alpha. This test, and all tests with smaller p-values are declared significant."),
-                       p("For more information about multiple comparisons, head over to this ", a("EGAP Methods Guide.", href="http://egap.org/resources/guides/10-things-you-need-to-know-about-multiple-comparisons/")))
+                       p("For more information about multiple comparisons, head over to this ", a("EGAP Methods Guide.", href="https://egap.org/resource/10-things-to-know-about-multiple-comparisons/")))
       )
     )
   )
