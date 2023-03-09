@@ -1,4 +1,5 @@
 shinyUI(fluidPage(
+  tags$head(includeHTML(("google-analytics.html"))),
   headerPanel("Power Calculator"),
   fluidRow(
     column(12,
