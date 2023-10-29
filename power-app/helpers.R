@@ -1,4 +1,5 @@
 #### Source code for power calculator
+library(plotly)
 
 power_calculator <- function(mu_t, mu_c, sigma, alpha=0.05, N){
   lowertail <- (abs(mu_t - mu_c)*sqrt(N))/(2*sigma)

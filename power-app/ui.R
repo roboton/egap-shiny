@@ -1,3 +1,5 @@
+library(plotly)
+
 shinyUI(fluidPage(
   tags$head(includeHTML(("google-analytics.html"))),
   headerPanel("Power Calculator"),
@@ -49,7 +51,7 @@ shinyUI(fluidPage(
   )),
     column(8,
            wellPanel(
-      plotOutput("powerplot")
+      plotlyOutput("powerplot")
            )
     )),
   column(12,
